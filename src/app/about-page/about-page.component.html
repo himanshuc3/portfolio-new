@@ -1,1 +1,46 @@
-<p>about-page works!</p>
+<div class="about-container">
+
+<section class="hero">
+    <h1>i'm himanshu chhabra</h1>
+    <p>I am a Frontend Engineer <span class="bold">@ Rapyuta Robotics</span>. Lover of ux design, creative coding, gin and tonic, chess, cricket, gaming, hip hop, books, table tennis, amateur ui designing…Did I mention my coding?</p>
+</section>
+
+<div class="vertical-rule"></div>
+
+<section class="about-me-container">
+    <h3>Here are some things about me</h3>
+    <ul  class="about-me-list">
+    <li *ngFor="let item of aboutMeList">
+    <div class="list-image-container">
+    <img src={{item.path}}/>
+    </div>
+    <p>{{item.title}}</p>
+    </li>
+    
+    </ul>
+    <div class="social-container">
+        <img src="assets/resume.svg" />
+        <img src="assets/twitter.svg" />
+        <img src="assets/github.svg" />
+        <img src="assets/instagram.svg" />
+    </div>
+
+</section>
+
+<div class="vertical-rule"></div>
+
+<section class="music-container">
+    <h3>💿 Spinning at my house</h3>
+
+    <ul class="albums-list-container">
+    <li *ngFor="let album of musicAlbums" >
+        <img src={{album.path}} />
+        <div class="album-info">
+            <p class="album">{{album.name}}</p>
+            <p class="artist">{{album.artist}}</p>
+        </div>
+    </li>
+    </ul>
+
+</section>
+</div>

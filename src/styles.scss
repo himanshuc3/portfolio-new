@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~normalize.css';
+
+html{
+
+font-family: 'Inter', sans-serif;
+background: #161618;
+    color: #D0C5C5;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+.bold {
+    font-weight: 700;
+}
