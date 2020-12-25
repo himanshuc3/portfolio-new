@@ -1,15 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~normalize.css';
 
-html{
-
+html,body{
+height: 100% !important;
 font-family: 'Inter', sans-serif;
-background: #161618;
-    color: #D0C5C5;
+background: #161618 !important;
+    color: #D0C5C5 !important;
 }
 
 h1,h2,h3,h4,h5,h6,p {
     margin: 0;
+    color: #ADAAAA !important;
 }
 
 .bold {
