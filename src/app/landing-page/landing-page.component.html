@@ -1,85 +1,59 @@
 
 <div class="hero_wrapper">
     <div class="left_hero">
-        <p>Hello I'm Himanshu, a frontend engineer from New Delhi. <br />
-        Currently @Rapyuta-Robotics.
+        <p class="hero_text">
+            Hello 👋 I'm Himanshu, <span class="designation"> a frontend <br /> 
+            engineer</span> from New Delhi. <br />
+        Currently <span class="company">@Rapyuta-Robotics</span>.
         </p>
-        <div>
-            <img src="#" alt="">
-            <img src="#" alt="">
-            <img src="#" alt="">
-            <img src="#" alt="">
+        <div class="social-icons">
+            <img src="assets/resume.svg" alt="">
+            <img src="assets/twitter.svg" alt="">
+            <img src="assets/github.svg" alt="">
+            <img src="assets/instagram.svg" alt="">
         </div>
     </div>
 
-    <div class="right_hero"><img src="dp" alt=""></div>
+    <div class="right_hero"><img src="assets/me.png" alt=""></div>
+</div>
+
     
     <section class="articles">
+        <h1>recently published</h1>
         <div class="articles_container">
-            <div class="article">
-                <img src="#" alt="">
+            <div class="article" *ngFor="let blog of recentBlogs">
+                <img src="{{blog.path}}" alt="">
                 <div class="article_text">
-                    <h4 class="article_header">on hover show poster for grayscale images</h4>
-                    <p class="tags">React / Graphql / cqs / redux</p>
+                    <div class="article_row_1">
+
+                        <h4 class="article_header">{{blog.title}}</h4>
+                        <p>{{blog.date}}</p>
+                    </div>
+                    <p class="blog_desc">{{blog.description}}</p>
                 </div>
             </div>
 
-            <div class="article">
-                <img src="#" alt="">
-                <div class="article_text">
-                    <h4 class="article_header">on hover show poster for grayscale images</h4>
-                    <p class="tags">React / Graphql / cqs / redux</p>
-                </div>
-            </div>
-
-            <div class="article">
-                <img src="#" alt="">
-                <div class="article_text">
-                    <h4 class="article_header">on hover show poster for grayscale images</h4>
-                    <p class="tags">React / Graphql / cqs / redux</p>
-                </div>
-            </div>
+          
         </div>
     </section>
 
 
     <section class="projects">
-        <div class="projects_container--2">
-            <div class="project">
-                <img src="project-image" alt="">
-                <h1 class="project_title">Cric-cli</h1>
-                <p class="description">A cli extension to follow cricket in cli.</p>
-            </div>
-            <div class="project">
-                <img src="project-image" alt="">
-                <h1 class="project_title">Cric-cli</h1>
-                <p class="description">A cli extension to follow cricket in cli.</p>
-            </div>
-        </div>
-        <div class="projects_container--3">
-            <div class="project">
-                <img src="project-image" alt="">
-                <h1 class="project_title">Cric-cli</h1>
-                <p class="description">A cli extension to follow cricket in cli.</p>
-            </div>
-            <div class="project">
-                <img src="project-image" alt="">
-                <h1 class="project_title">Cric-cli</h1>
-                <p class="description">A cli extension to follow cricket in cli.</p>
-            </div>
-            <div class="project">
-                <img src="project-image" alt="">
-                <h1 class="project_title">Cric-cli</h1>
-                <p class="description">A cli extension to follow cricket in cli.</p>
-            </div>
-        </div>
-    </section>
+        <h1>projects</h1>
+        <div class="projects_container">
+            <div class="project" *ngFor="let project of projects">
+                <img src="{{project.path}}" alt="">
+                <div class="project_text">
 
-    <section class="footer">
-        <div class="work_mail">Interested in working with me ? <br>
-        Drop me a message at himanshu_chhabra@outlook.com
+                    <h1 class="project_title">{{project.title}}</h1>
+                    <p class="description">{{project.description}}</p>
+                </div>
+                <div class="github">
+                    <img src="assets/github-outline.svg" alt="">
+                    source
+                </div>
+            </div>
+           
         </div>
-
-        <div class="links"><p>Resume</p> <p>LinkedIn</p></div>
+       
     </section>
-</div>
