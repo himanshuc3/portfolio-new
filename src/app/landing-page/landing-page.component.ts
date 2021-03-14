@@ -9,7 +9,7 @@ export default class LandingPage implements OnInit {
 
   recentBlogs:any = [
     {
-      title: 'On hover show poster',
+      title: 'On hover show poster: css draft for next age',
       path: 'assets/react.svg',
       description: 'While working on pointclouds for Amphion and Zethus, I came across an interesting problem.',
       date: 'Dec 09, 2020'

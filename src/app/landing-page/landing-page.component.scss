@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   width: 800px;
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
 .left_hero {
@@ -10,25 +10,26 @@
   flex-direction: column;
 
   .social-icons {
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
   .social-icons > img {
-    width: 25px;
-    margin-right: 20px;
+    height: 24px;
+    margin-right: 40px;
   }
 
   .hero_text {
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 0.2px;
+    font-weight: 400;
     line-height: 42px;
 
     & .designation {
-      font-weight: 500;
+      font-weight: 600;
     }
 
     & .company {
-      font-weight: 700;
+      font-weight: 600;
     }
   }
 }
@@ -48,11 +49,11 @@
 }
 
 .articles_container {
-  margin-left: 20px;
+  margin-top:80px;
 }
 
 .articles {
-  margin-top: 80px;
+  margin-top: 160px;
 
   .article {
     display: flex;
@@ -62,6 +63,7 @@
     & > img {
       width: 24px;
       margin: 10px 10px 0 0;
+      display: none;
     }
 
     & .article_row_1 {
@@ -76,7 +78,7 @@
     }
 
     & .article_header {
-      font-size: 24px;
+      font-size: 28px;
     }
 
     & .blog_desc {
@@ -91,7 +93,7 @@
 .projects > h1 {
   text-transform: uppercase;
   color: #4d4d4d !important;
-  font-weight: 800;
+  font-weight: 500;
   font-size: 18px;
 }
 
