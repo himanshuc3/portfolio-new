@@ -6,17 +6,18 @@
 
 .hero{
     text-align: center;
+
  & > h1 {
     text-transform: uppercase;
-    color: white;
+    color: white !important;
     margin-top: 80px;
+    font-weight: 700;
 }
 // better spacing 
  & > p{
      font-size: 24px;
      line-height: 42px;
      text-align: left;
-    //  text-justify: distribute;
     hyphens: auto;
     width: 80%;
     margin: 40px auto 0;
@@ -29,8 +30,8 @@
     align-items: center;
     & > h3 {
         font-size: 28px;
-        color: white;
-        font-weight: 500;
+        color: white !important;
+        font-weight: 400;
     }
 }
 
@@ -67,13 +68,13 @@
 }
 
 .social-container {
-    margin-top: 30px; 
+    margin-top: 40px; 
     display: flex;
     align-items: center;
     justify-content: center;
     img {
-        height: 20px;
-        margin-right: 40px;
+        height: 30px;
+        margin-right: 60px;
     }
 
     img:last-child{
@@ -86,6 +87,11 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    & > h3 {
+        font-size: 28px;
+        color: white !important;
+        font-weight: 400;
+    }
 }
 
 .albums-list-container {
