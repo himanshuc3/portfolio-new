@@ -3,6 +3,7 @@
 
 html,body{
 height: 100% !important;
+scrollbar-width: thin;    
 width: 100%;
 overflow-x: hidden;
 font-family: 'Inter', sans-serif;
@@ -17,4 +18,17 @@ h1,h2,h3,h4,h5,h6,p {
 
 .bold {
     font-weight: 700;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;        /* color of the tracking area */
+  border: 1px solid #4d4d4d;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:#4d4d4d;    /* color of the scroll thumb */
 }
