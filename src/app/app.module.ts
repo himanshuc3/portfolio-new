@@ -32,6 +32,7 @@ registerLocaleData(en);
     BlogPageComponent,
     LandingPage,
     FooterComponent,
+    
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,46 @@
-h1 {
-  color:rgb(51, 6, 37);
-  background-color: rgb(248, 211, 236);
-  padding: 5px;
-  border-radius: 5px;
-  width: fit-content;
+.header-text {
+  text-align: center;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.filter-container > div {
+  display: flex;
+  width: 60%;
+}
+
+.filter-container > div:first-child {
+  & .search {
+    width: 70%;
+    margin-right: 20px;
+  }
+}
+
+.filter-container > .tags {
+  margin-top: 10px;
+
+  & .tag {
+    border-radius: 20px;
+    padding: 2px 20px;
+  }
+}
+
+.blogs {
+  margin-top: 60px;
+
+  & .blog-title {
+    font-size: 32px;
+    line-height: 42px;
+    color: white;
+    border-bottom-color: #333333;
+  }
+
+  & .blog-date {
+    color: #4d4d4d;
+  }
 }

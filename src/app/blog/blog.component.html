@@ -1,7 +1,39 @@
-<h3>ScullyIo content</h3>
-<hr>
+<h1 class="header-text">Have a read</h1>
 
-<!-- This is where Scully will inject the static HTML -->
-<scully-content></scully-content>
-<hr>
-<h4>End of content</h4>
+<div class="filter-container">
+    <div>
+
+        <nz-input-group [nzSuffix]="suffixIconSearch" class="search">
+            <input type="text" nz-input placeholder="input search text" />
+          </nz-input-group>
+          <ng-template #suffixIconSearch>
+            <i nz-icon nzType="search"></i>
+          </ng-template>
+          <nz-select ngModel="lucy">
+            <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+            <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+            <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
+          </nz-select>
+    </div>
+    <div class="tags">
+        <nz-tag class="tag">Tag 1</nz-tag>
+        <nz-tag class="tag">Tag 1</nz-tag>
+        <nz-tag class="tag">Tag 1</nz-tag>
+        <nz-tag class="tag">Tag 1</nz-tag>
+    </div>
+</div>
+
+<section class="blogs">
+    <ul nz-list nzSize="large">
+
+        <li nz-list-item *ngFor="let post of posts$ | async"  class="blog-title">
+            <ul nz-list-item-actions >
+              <nz-list-item-action>
+                <p class="blog-date"><a [routerLink]="post.route">{{post.date}}</a></p>
+              </nz-list-item-action>
+            </ul>
+            {{ post.title }}
+          </li>
+    </ul>
+</section>
+<!-- <scully-content></scully-content> -->
