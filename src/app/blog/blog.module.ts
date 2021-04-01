@@ -9,9 +9,10 @@ import { NzTagModule } from 'ng-zorro-antd/tag';
 import { NzListModule } from 'ng-zorro-antd/list';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzInputModule } from 'ng-zorro-antd/input';
+import { ArticleComponent } from '../article/article.component';
 
 @NgModule({
-  declarations: [BlogComponent],
+  declarations: [BlogComponent, ArticleComponent],
   imports: [CommonModule, BlogRoutingModule, ScullyLibModule, NzInputModule,
     NzSelectModule,
     NzTagModule,

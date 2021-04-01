@@ -16,17 +16,19 @@ declare var ng: any;
 })
 export class BlogComponent implements OnInit {
 
-  posts$: Observable<ScullyRoute[]>;
+   posts$: Observable<ScullyRoute[]>;
   constructor(private scully: ScullyRoutesService) {
   }
 
+ 
+
   ngOnInit() {
-      this.posts$ = this.scully.available$.pipe(
-        map(routeList => {
-          return routeList.filter((route: ScullyRoute) =>
-            route.route.startsWith(`/blog/`)
-          );
-        })
+     this.posts$ = this.scully.available$.pipe(
+    map(routeList => {
+      return routeList.filter((route: ScullyRoute) =>
+        route.route.startsWith(`/blog/`)
       );
+    })
+  );
     }
 }
