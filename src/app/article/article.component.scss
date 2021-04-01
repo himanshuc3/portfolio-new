@@ -1,0 +1,95 @@
+
+.scully-content {
+    margin: 20px auto;
+    width: 80%;
+    font-size: 22px;
+
+    & p{
+        margin: 30px;
+    }
+
+    & h2 {
+        margin-top: 42px;
+        margin-bottom: 0;
+    }
+
+    & blockquote {
+        font-weight: 300;
+        border-left: 4px solid #4D4D4D;
+    }
+
+    & figure {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        & p {
+            display: inline-block;
+            text-align:center;
+            margin-bottom: 5px;
+        }
+
+        & figcaption {
+            color: #4D4D4D;
+            font-size: 16px;
+            text-align:center;
+            max-width: 70%;
+            margin: 5px auto;
+        }
+        // & p {
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: center;
+        // }
+    }
+}
+
+.header {
+      margin-left: 30px;
+  
+    & .date-tags  {
+    margin-bottom: 0;
+    width: 100%;
+    color: #4D4D4D !important;
+    margin-left: 60px;
+    font-size: 16px;
+
+   & .circle {
+       display: inline-block;
+       width: 5px; 
+       height: 5px;
+       background: #4D4D4D !important;
+       border-radius: 50%;
+       margin: 0 5px 3px 5px;
+   }
+}
+    
+}
+
+.header-title-container {
+      display: flex;
+      align-items: flex-start;
+ & .header-title{
+    width: 70%;
+    margin-left: 20px;
+}
+
+  & .icon {
+      width: 42px;
+      margin-top: 10px;
+  }
+}
+
+
+
+
+.poster{
+    width:100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+.article-container {
+    width: 100%;
+    max-width: 950px;
+    margin-top: 100px;
+}
