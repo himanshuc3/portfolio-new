@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SOCIAL_LINKS} from '../shared/constants'
 
 @Component({
   selector: 'app-landing-page',
@@ -50,6 +51,8 @@ export default class LandingPage implements OnInit {
 
     }
   ]
+
+  socialLinks = SOCIAL_LINKS
 
   constructor() { }
 

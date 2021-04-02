@@ -28,7 +28,7 @@ body::-webkit-scrollbar {
 }
 
 p::selection, h1::selection, h2::selection, span::selection, li::selection,
-a::selection, h4::selection {
+a::selection, h4::selection, img::selection {
   background: rgba(230,230,230,0.1) ;
 }
 
