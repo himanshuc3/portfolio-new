@@ -20,8 +20,10 @@
     <section class="articles">
         <h1>recently published</h1>
         <div class="articles_container">
-            <div class="article" *ngFor="let blog of recentBlogs">
-                <img src="{{blog.path}}" alt="">
+            <div class="article" *ngFor="let blog of posts$ | async">
+            <a href="{{'/blog/' + blog.route}}">
+
+                <!-- <img src="{{blog.path}}" alt=""> -->
                 <div class="article_text">
                     <div class="article_row_1">
 
@@ -30,6 +32,7 @@
                     </div>
                     <!-- <p class="blog_desc">{{blog.description}}</p> -->
                 </div>
+                </a>
             </div>
 
           

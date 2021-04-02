@@ -17,6 +17,6 @@ import { ArticleComponent } from '../article/article.component';
     NzSelectModule,
     NzTagModule,
     NzListModule,
-    NzIconModule,],
+    NzIconModule],
 })
 export class BlogModule {}

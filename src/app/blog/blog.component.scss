@@ -9,16 +9,22 @@
   margin-top: 10px;
 }
 
-.filter-container > div {
+.filter-container {
+  .search-container{
+
+  
   display: flex;
   width: 60%;
+
+   & .search {
+    width: 70%;
+    margin: 0 auto;
+  }
+  }
 }
 
 .filter-container > div:first-child {
-  & .search {
-    width: 70%;
-    margin-right: 20px;
-  }
+ 
 }
 
 .filter-container > .tags {
@@ -38,6 +44,16 @@
     line-height: 42px;
     color: white;
     border-bottom-color: #333333;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover{
+      background: #2d2d31;
+    } 
+  
+    & ul {
+      display: flex;
+    }
   }
 
   & .blog-date {

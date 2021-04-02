@@ -19,10 +19,7 @@
     
     </ul>
     <div class="social-container">
-        <img src="assets/resume.svg" />
-        <img src="assets/twitter.svg" />
-        <img src="assets/github.svg" />
-        <img src="assets/instagram.svg" />
+        <a *ngFor="let link of socialLinks" href="{{link.link}}" target="_blank"><img src="{{link.src}}" /></a>
     </div>
 
 </section>
@@ -34,7 +31,7 @@
 
     <ul class="albums-list-container">
     <li *ngFor="let album of musicAlbums" >
-        <img src={{album.path}} />
+        <a href="{{album.link}}" target="_blank"><img src={{album.path}} /></a>
         <div class="album-info">
             <p class="album">{{album.name}}</p>
             <p class="artist">{{album.artist}}</p>
