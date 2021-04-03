@@ -11,7 +11,7 @@
     "scully": "npx scully --",
     "scully:serve": "npx scully serve --",
     "jam-it": "ng build && npm run scully -- --scanRoutes && npm run scully:serve",
-    "jam-build": "ng build --prod && npm run scully" 
+    "jam-build": "ng build --prod && npm run scully -- --scanRoutes" 
   },
   "private": true,
   "dependencies": {
