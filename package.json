@@ -10,7 +10,8 @@
     "e2e": "ng e2e",
     "scully": "npx scully --",
     "scully:serve": "npx scully serve --",
-    "jam-it": "ng build && npm run scully -- --scanRoutes && npm run scully:serve"
+    "jam-it": "ng build && npm run scully -- --scanRoutes && npm run scully:serve",
+    "jam-build": "ng build --prod && npm run scully" 
   },
   "private": true,
   "dependencies": {
