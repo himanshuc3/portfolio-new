@@ -17,7 +17,19 @@ declare var ng: any;
 export class BlogComponent implements OnInit {
 
    posts$: Observable<ScullyRoute[]>;
+   search?: string = '';
+   filteredPosts$:Observable<ScullyRoute[]>;
   constructor(private scully: ScullyRoutesService) {
+  }
+
+  onSearchChange(event: any): void{
+    this.filteredPosts$ = this.scully.available$.pipe(
+    map(routeList => {
+      return routeList.filter((route: ScullyRoute) =>
+        route.route.startsWith(`/blog/`) && route.route.includes(event.target.value)
+      );
+    })
+  );
   }
 
  
@@ -30,5 +42,6 @@ export class BlogComponent implements OnInit {
       );
     })
   );
+  this.filteredPosts$ = this.posts$
     }
 }

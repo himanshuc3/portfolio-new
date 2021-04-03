@@ -22,7 +22,14 @@ h1,h2,h3,h4,h5,h6,p {
 
 body::-webkit-scrollbar {
   width: 8px;  
-  overflow: overlay;             
+  overflow: overlay;     
+  display:block;
+
+}
+
+p::selection, h1::selection, h2::selection, span::selection, li::selection,
+a::selection, h4::selection, img::selection {
+  background: rgba(230,230,230,0.1) ;
 }
 
 body::-webkit-scrollbar-track {

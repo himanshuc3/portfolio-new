@@ -1,5 +1,10 @@
+.container {
+  width: 700px;
+}
+
 .header-text {
   text-align: center;
+  margin-top: 70px;
 }
 
 .filter-container {
@@ -9,16 +14,39 @@
   margin-top: 10px;
 }
 
-.filter-container > div {
+.filter-container {
+  .search-container{
+
+  
   display: flex;
   width: 60%;
+
+   & .search {
+    width: 80%;
+    margin: 0 auto;
+
+
+      background: #2d2d31;
+      border: none;
+      height: 50px;
+
+    & > input{
+      background: transparent;
+      color: #D0C5C5;
+
+    }
+
+    .search-icon{
+      color: #D0C5C5;
+    }
+
+
+  }
+  }
 }
 
 .filter-container > div:first-child {
-  & .search {
-    width: 70%;
-    margin-right: 20px;
-  }
+ 
 }
 
 .filter-container > .tags {
@@ -31,13 +59,23 @@
 }
 
 .blogs {
-  margin-top: 60px;
+  margin-top: 80px;
 
   & .blog-title {
     font-size: 32px;
     line-height: 42px;
     color: white;
     border-bottom-color: #333333;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover{
+      background: #2d2d31;
+    } 
+  
+    & ul {
+      display: flex;
+    }
   }
 
   & .blog-date {

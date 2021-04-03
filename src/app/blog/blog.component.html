@@ -1,39 +1,41 @@
+<div class="container">
+
 <h1 class="header-text">Have a read</h1>
 
 <div class="filter-container">
-    <div>
+    <div class="search-container">
 
         <nz-input-group [nzSuffix]="suffixIconSearch" class="search">
-            <input type="text" nz-input placeholder="input search text" />
+            <input type="text" nz-input placeholder="search for articles..." [ngModel]="search" (input)="onSearchChange($event)"/>
           </nz-input-group>
           <ng-template #suffixIconSearch>
-            <i nz-icon nzType="search"></i>
+            <i nz-icon nzType="search" class="search-icon"></i>
           </ng-template>
-          <nz-select ngModel="lucy">
+          <!-- <nz-select ngModel="lucy">
             <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
             <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
             <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
-          </nz-select>
+          </nz-select> -->
     </div>
-    <div class="tags">
+    <!-- <div class="tags">
         <nz-tag class="tag">Tag 1</nz-tag>
         <nz-tag class="tag">Tag 1</nz-tag>
         <nz-tag class="tag">Tag 1</nz-tag>
         <nz-tag class="tag">Tag 1</nz-tag>
-    </div>
+    </div> -->
 </div>
 
 <section class="blogs">
     <ul nz-list nzSize="large" >
 
-        <li nz-list-item *ngFor="let post of posts$ | async"  class="blog-title" routerLink="{{post.route}}">
+        <li nz-list-item *ngFor="let post of filteredPosts$ | async"  class="blog-title" [routerLink]="post.route">
             <ul nz-list-item-actions >
               <nz-list-item-action>
-                <p class="blog-date"><a [routerLink]="post.route">{{post.date}}</a></p>
+                <p class="blog-date">{{post.date}}</p>
               </nz-list-item-action>
             </ul>
             {{ post.title }}
           </li>
     </ul>
 </section>
-<!-- <scully-content></scully-content> -->
+</div>

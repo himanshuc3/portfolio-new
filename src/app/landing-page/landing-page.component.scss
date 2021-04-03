@@ -13,7 +13,7 @@
     margin-top: 50px;
   }
 
-  .social-icons > img {
+  .social-icons >a> img {
     height: 24px;
     margin-right: 40px;
   }
@@ -41,9 +41,9 @@
   // border: 1px solid white;
   img {
     position: absolute;
-    left: -300px;
-    top: -120px;
-    width: 800px;
+    left: 0;
+    top: -40px;
+    width: 200px;
     margin-top: 30px;
   }
 }

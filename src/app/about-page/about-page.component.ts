@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import {SOCIAL_LINKS} from '../shared/constants'
+
 @Component({
   selector: 'app-about-page',
   templateUrl: './about-page.component.html',
@@ -35,19 +37,24 @@ export class AboutPageComponent implements OnInit {
     {
       path: 'assets/eminem_kamikaze.png',
       artist: 'Eminem',
-      name: 'Kamikaze'
+      name: 'Kamikaze',
+      link: 'https://music.youtube.com/playlist?list=OLAK5uy_kRVaDLvDemKrwYjkdUTryKHIyQa_RiiPo'
     },
      {
       path: 'assets/coldplay_everydaylife.png',
       artist: 'Coldplay',
-      name: 'Everyday life'
+      name: 'Everyday life',
+       link: 'https://music.youtube.com/playlist?list=OLAK5uy_kRVaDLvDemKrwYjkdUTryKHIyQa_RiiPo'
     },
      {
       path: 'assets/eminem_kamikaze.png',
       artist: 'Eminem',
-      name: 'Kamikaze'
+      name: 'Kamikaze',
+      link: 'https://music.youtube.com/playlist?list=OLAK5uy_kRVaDLvDemKrwYjkdUTryKHIyQa_RiiPo'
     }
   ]
+
+  socialLinks = SOCIAL_LINKS
 
   constructor() { }
 
