@@ -6,10 +6,10 @@
     <div class="search-container">
 
         <nz-input-group [nzSuffix]="suffixIconSearch" class="search">
-            <input type="text" nz-input placeholder="input search text" [ngModel]="search" (input)="onSearchChange($event.target.value)"/>
+            <input type="text" nz-input placeholder="search for articles..." [ngModel]="search" (input)="onSearchChange($event)"/>
           </nz-input-group>
           <ng-template #suffixIconSearch>
-            <i nz-icon nzType="search"></i>
+            <i nz-icon nzType="search" class="search-icon"></i>
           </ng-template>
           <!-- <nz-select ngModel="lucy">
             <nz-option nzValue="jack" nzLabel="Jack"></nz-option>

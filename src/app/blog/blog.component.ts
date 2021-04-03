@@ -17,16 +17,16 @@ declare var ng: any;
 export class BlogComponent implements OnInit {
 
    posts$: Observable<ScullyRoute[]>;
-   search: string = '';
+   search?: string = '';
    filteredPosts$:Observable<ScullyRoute[]>;
   constructor(private scully: ScullyRoutesService) {
   }
 
-  onSearchChange(value:string){
+  onSearchChange(event: any): void{
     this.filteredPosts$ = this.scully.available$.pipe(
     map(routeList => {
       return routeList.filter((route: ScullyRoute) =>
-        route.route.startsWith(`/blog/`) && route.route.includes(value)
+        route.route.startsWith(`/blog/`) && route.route.includes(event.target.value)
       );
     })
   );

@@ -21,7 +21,7 @@
         <h1>recently published</h1>
         <div class="articles_container">
             <div class="article" *ngFor="let blog of posts$ | async">
-            <a href="{{'/blog/' + blog.route}}">
+            <a href="{{blog.route}}">
 
                 <!-- <img src="{{blog.path}}" alt=""> -->
                 <div class="article_text">
