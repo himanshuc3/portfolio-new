@@ -63,6 +63,7 @@ export default class LandingPage implements OnInit {
   constructor(private scully: ScullyRoutesService) {
   }
 
+
   ngOnInit() {
      this.posts$ = this.scully.available$.pipe(
     map(routeList => {

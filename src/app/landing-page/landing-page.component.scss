@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   width: 800px;
-  margin-top: 120px;
+  margin-top: 160px;
 }
 
 .left_hero {
@@ -13,9 +13,13 @@
     margin-top: 50px;
   }
 
-  .social-icons >a> img {
+  .social-icons > a > img {
     height: 24px;
     margin-right: 40px;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.2, 1.2);
+    }
   }
 
   .hero_text {
@@ -53,7 +57,7 @@
 }
 
 .articles {
-  margin-top: 160px;
+  margin-top: 190px;
 
   .article {
     display: flex;
@@ -64,10 +68,10 @@
 
     &:hover {
       background: #2d2d31;
-cursor:pointer;
+      cursor: pointer;
     }
 
-    &:hover .article_header{
+    &:hover .article_header {
       border-bottom: 1px dashed white;
     }
 

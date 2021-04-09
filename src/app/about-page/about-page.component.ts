@@ -47,10 +47,10 @@ export class AboutPageComponent implements OnInit {
        link: 'https://music.youtube.com/playlist?list=OLAK5uy_kRVaDLvDemKrwYjkdUTryKHIyQa_RiiPo'
     },
      {
-      path: 'assets/eminem_kamikaze.png',
+      path: 'assets/eminem_album.png',
       artist: 'Eminem',
-      name: 'Kamikaze',
-      link: 'https://music.youtube.com/playlist?list=OLAK5uy_kRVaDLvDemKrwYjkdUTryKHIyQa_RiiPo'
+      name: 'Music to be murdered by',
+      link: 'https://music.youtube.com/playlist?list=OLAK5uy_lIEaoIYU5E4kdhoBqFtrrnRbtftmIAueQ'
     }
   ]
 

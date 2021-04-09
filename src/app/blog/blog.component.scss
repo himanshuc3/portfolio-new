@@ -15,38 +15,31 @@
 }
 
 .filter-container {
-  .search-container{
+  .search-container {
+    display: flex;
+    width: 60%;
 
-  
-  display: flex;
-  width: 60%;
-
-   & .search {
-    width: 80%;
-    margin: 0 auto;
-
+    & .search {
+      width: 80%;
+      margin: 0 auto 20px;
 
       background: #2d2d31;
       border: none;
-      height: 50px;
+      height: 40px;
 
-    & > input{
-      background: transparent;
-      color: #D0C5C5;
+      & > input {
+        background: transparent;
+        color: #d0c5c5;
+      }
 
+      .search-icon {
+        color: #d0c5c5;
+      }
     }
-
-    .search-icon{
-      color: #D0C5C5;
-    }
-
-
-  }
   }
 }
 
 .filter-container > div:first-child {
- 
 }
 
 .filter-container > .tags {
@@ -69,10 +62,10 @@
     cursor: pointer;
     border-radius: 5px;
 
-    &:hover{
+    &:hover {
       background: #2d2d31;
-    } 
-  
+    }
+
     & ul {
       display: flex;
     }
