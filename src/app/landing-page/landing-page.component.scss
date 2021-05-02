@@ -27,6 +27,7 @@
     letter-spacing: 0.2px;
     font-weight: 400;
     line-height: 42px;
+    cursor: url("/assets/rr-logo.png"), copy;
 
     & .designation {
       font-weight: 600;
@@ -34,6 +35,8 @@
 
     & .company {
       font-weight: 600;
+
+      cursor: url("/assets/rr-logo.png"), copy;
     }
   }
 }
