@@ -1,3 +1,8 @@
+$icon-github: white;
+$icon-ig: red;
+$icon-resume: white;
+$icon-twitter: blue;
+
 .hero_wrapper {
   display: flex;
   justify-content: space-around;
@@ -13,13 +18,28 @@
     margin-top: 50px;
   }
 
-  .social-icons > a > img {
-    height: 24px;
+  .social-icons > a > .ng-fa-icon {
+    font-size: 24px;
     margin-right: 40px;
-    transition: transform 0.3s;
-    &:hover {
-      transform: scale(1.2, 1.2);
+    color: #2d2d31;
+    & > svg:hover {
+      transform: scale(1.5) !important; // not working
+      // font-size: 28px;
     }
+  }
+
+  .social-icons > a > .icon-github:hover {
+    color: $icon-github;
+  }
+  .social-icons > a > .icon-ig:hover {
+    color: $icon-ig;
+  }
+  .social-icons > a > .icon-twitter:hover {
+    color: $icon-twitter;
+  }
+
+  .social-icons > a > .icon-resume:hover {
+    color: $icon-resume;
   }
 
   .hero_text {

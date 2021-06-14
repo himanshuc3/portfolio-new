@@ -1,3 +1,8 @@
+$icon-github: white;
+$icon-ig: red;
+$icon-resume: white;
+$icon-twitter: blue;
+
 .about-container {
   display: flex;
   flex-direction: column;
@@ -69,13 +74,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  a > img {
-    height: 30px;
-    margin-right: 60px;
+  & > a > .ng-fa-icon {
+    font-size: 24px;
+    margin-right: 40px;
+    color: #2d2d31;
+    & > svg:hover {
+      transform: scale(1.5) !important; // not working
+      // font-size: 28px;
+    }
   }
 
-  img:last-child {
-    margin-right: 0;
+  & > a > .icon-github:hover {
+    color: $icon-github;
+  }
+  & > a > .icon-ig:hover {
+    color: $icon-ig;
+  }
+  & > a > .icon-twitter:hover {
+    color: $icon-twitter;
+  }
+
+  & > a > .icon-resume:hover {
+    color: $icon-resume;
   }
 }
 

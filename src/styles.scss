@@ -1,6 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~normalize.css';
 
+div {
+  transition: all 0.3s;
+}
+
+.ng-fa-icon {
+  transition: color 0.8s;
+}
+
+
 html,body{
 height: 100% !important;
 scrollbar-width: thin;    
