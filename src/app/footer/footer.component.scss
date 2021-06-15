@@ -1,6 +1,8 @@
 footer {
   font-weight: 500;
-  max-width: 780px;
+  max-width: 800px;
+  width: 100%;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -10,7 +12,7 @@ footer {
   .drop-mail-message {
     margin-top: 10px;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.125rem;
     width: 70%;
     display: inline-block;
     margin: auto;
@@ -33,5 +35,14 @@ footer {
     & a {
       color: #adaaaa;
     }
+  }
+}
+
+@media only screen and (max-width: 500px){
+  footer{
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding-top:20px;
+    border-top: 1px solid 	rgba(173, 170, 170,0.3);
   }
 }

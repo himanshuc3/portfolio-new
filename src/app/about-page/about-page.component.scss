@@ -17,11 +17,12 @@ $icon-twitter: blue;
     color: white !important;
     margin-top: 140px;
     font-weight: 700;
+    font-size: 1.75rem;
   }
   // better spacing
   & > p {
-    font-size: 24px;
-    line-height: 42px;
+    font-size: 1.5rem;
+    line-height: 2.625rem;
     text-align: center;
     // hyphens: auto;
     width: 80%;
@@ -34,7 +35,7 @@ $icon-twitter: blue;
   flex-direction: column;
   align-items: center;
   & > h3 {
-    font-size: 28px;
+    font-size: 1.75rem;
     color: white !important;
     font-weight: 400;
   }
@@ -105,7 +106,7 @@ $icon-twitter: blue;
   align-items: center;
   width: 100%;
   & > h3 {
-    font-size: 28px;
+    font-size: 1.75rem;
     color: white !important;
     font-weight: 400;
   }
@@ -146,11 +147,11 @@ $icon-twitter: blue;
 
     .album {
       margin-top: 20px;
-      font-size: 22px;
+      font-size: 1.375rem;
       color: #d0c5c5;
     }
     .artist {
-      font-size: 16px;
+      font-size: 1rem;
       color: #4d4d4d;
       margin-top: 5px;
     }
@@ -170,5 +171,15 @@ $icon-twitter: blue;
   }
   to {
     transform: rotateZ(360deg);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .albums-list-container {
+    display: flex;
+    flex-direction: column;
+    li {
+      margin-bottom: 30px;
+    }
   }
 }

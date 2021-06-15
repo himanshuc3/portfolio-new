@@ -1,10 +1,12 @@
 .container {
-  width: 700px;
+  max-width: 800px;
+  width: 100%;
 }
 
 .header-text {
   text-align: center;
   margin-top: 70px;
+  font-size: 2.25rem;
 }
 
 .filter-container {
@@ -52,8 +54,8 @@
   margin-top: 80px;
 
   & .blog-title {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 1.6rem;
+    line-height: 2.625rem;
     color: white;
     border-bottom-color: #333333;
     cursor: pointer;
@@ -61,6 +63,10 @@
 
     &:hover {
       background: #2d2d31;
+    }
+
+    & .ant-list-item-action{
+      margin:0;
     }
 
     & ul {

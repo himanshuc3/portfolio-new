@@ -6,7 +6,7 @@ $icon-twitter: blue;
 .hero_wrapper {
   display: flex;
   justify-content: space-around;
-  width: 800px;
+  width: 100%;
   margin-top: 160px;
 }
 
@@ -43,10 +43,10 @@ $icon-twitter: blue;
   }
 
   .hero_text {
-    font-size: 26px;
+    font-size: 1.625rem;
     letter-spacing: 0.2px;
     font-weight: 400;
-    line-height: 42px;
+    line-height: 2.625rem;
     cursor: url("/assets/rr-logo.png"), copy;
 
     & .designation {
@@ -113,13 +113,13 @@ $icon-twitter: blue;
       & > p {
         font-weight: 300;
         color: #4d4d4d;
-        font-size: 16px;
+        font-size: 1rem;
         width: 100px;
       }
     }
 
     & .article_header {
-      font-size: 28px;
+      font-size: 1.25rem;
       font-weight: 500;
       color: white !important;
       border: 1px dashed transparent;
@@ -128,7 +128,7 @@ $icon-twitter: blue;
     & .blog_desc {
       width: 70%;
       color: #4d4d4d !important;
-      font-size: 20px;
+      font-size: 1.25rem;
     }
   }
 }
@@ -138,7 +138,7 @@ $icon-twitter: blue;
   text-transform: uppercase;
   color: #4d4d4d !important;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .projects {
@@ -190,5 +190,27 @@ $icon-twitter: blue;
       margin-right: 10px;
       width: 14px;
     }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .social-icons {
+      text-align: center;
+    }
+    .right_hero {
+      margin-top: 50px;
+    }
+  }
+
+  .articles{
+    margin-top: 100px;
+  }
+
+  .hero_wrapper{ 
+    margin-top:80px;
   }
 }

@@ -1,5 +1,6 @@
 header {
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -15,7 +16,7 @@ header {
 a {
   text-decoration: none;
   color: #4d4d4d;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   border-bottom: 4px solid transparent;
 }
@@ -28,12 +29,17 @@ a {
 .nav-container {
   list-style-type: none;
   margin-bottom: 0;
+  padding:0;
 }
 
 .nav-container > li {
   display: inline-flex;
   margin-left: 50px;
   // float: left;
+}
+
+.nav-container li:first-child{
+  margin-left: 0;
 }
 
 .header-right-icons-container > a > img {
@@ -49,4 +55,10 @@ a {
   position: absolute;
   right: -30px;
   top: 70px;
+}
+
+@media only screen and (max-width: 500px) {
+  .coding-illustration {
+    display: none;
+  }
 }

@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~normalize.css';
 
+
+
 div {
   transition: all 0.3s;
 }
@@ -12,8 +14,9 @@ div {
 
 html,body{
 height: 100% !important;
-scrollbar-width: thin;    
-width: 100%;
+width: 100vw;
+font-size: 16px;
+scrollbar-width:thin;
 overflow-x: hidden;
 font-family: 'Inter', sans-serif;
 background: #161618 !important;
@@ -30,7 +33,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 body::-webkit-scrollbar {
-  width: 8px;  
+  width: 5px;  
   overflow: overlay;     
   display:block;
 
@@ -48,4 +51,10 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color:#4d4d4d;    /* color of the scroll thumb */
+}
+
+@media only screen and (max-width:500px){
+  html{
+    font-size: 12px;
+  }
 }
