@@ -31,6 +31,7 @@ Keyword from above is `video` i.e. [HTMLVideoElement](https://developer.mozilla.
 </figure>
 
 Now that you see it in action, let's see how we can add this to literally any website (amazon, netflix...) and create a PIP. 
+<p class="codeblock-title">Selects the first video in the page and shows in PIP</p>
 
 ```js
 var selectedVideo = document.getElementsByTagName('video')[0]; // selects the first video, can also select by classname/id if multiple videos are playing on the same page

@@ -50,6 +50,32 @@
     border-left: 4px solid #4d4d4d;
   }
 
+  & .codeblock-title{
+    width: 100%;
+    margin: 0;
+    background: black;
+    color: white;
+    font-size:0.8rem;
+    text-align:center;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+  }
+
+  & pre{
+margin-top:0;
+  white-space: pre-wrap;
+  
+  & > code {
+    white-space: pre-wrap;
+    font-size:1rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    width: 100%;
+  }
+  }
   & figure {
     display: flex;
     flex-direction: column;
