@@ -44,7 +44,7 @@ export class AboutPageComponent implements OnInit {
       path: 'assets/coldplay_everydaylife.png',
       artist: 'Coldplay',
       name: 'Everyday life',
-       link: 'https://music.youtube.com/playlist?list=OLAK5uy_kRVaDLvDemKrwYjkdUTryKHIyQa_RiiPo'
+       link: 'https://music.youtube.com/playlist?list=OLAK5uy_mnshCwgGyL-QtFFN891bsO85Ied3K8h08'
     },
      {
       path: 'assets/eminem_album.png',

@@ -8,9 +8,7 @@
             engineer</span> from New Delhi.<br />
         Currently <span class="company">@Rapyuta-Robotics</span>.
         </p>
-        <div class="social-icons">
-        <a *ngFor="let link of socialLinks" href="{{link.link}}" target="_blank"><fa-icon [icon]="link.src" class="{{link.className}}"></fa-icon></a>
-        </div>
+        <app-socials ></app-socials>
     </div>
 
     <div class="right_hero"><img src="assets/me.png" alt=""></div>

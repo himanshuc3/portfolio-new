@@ -1,0 +1,31 @@
+$icon-github: white;
+$icon-ig: #405DE6;
+$icon-resume: white;
+$icon-twitter: #1DA1F2;
+
+  .social-icons {
+    margin-top: 50px;
+  }
+
+  .social-icons > a > .ng-fa-icon {
+    font-size: 24px;
+    margin-right: 40px;
+    color: #2d2d31;
+    & > svg:hover {
+      transform: scale(1.5) !important; // not working
+    }
+  }
+
+  .social-icons > a > .icon-github:hover {
+    color: $icon-github;
+  }
+  .social-icons > a > .icon-ig:hover {
+    color: $icon-ig;
+  }
+  .social-icons > a > .icon-twitter:hover {
+    color: $icon-twitter;
+  }
+
+  .social-icons > a > .icon-resume:hover {
+    color: $icon-resume;
+  }

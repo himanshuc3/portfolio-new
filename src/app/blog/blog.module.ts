@@ -12,6 +12,8 @@ import { NzListModule } from 'ng-zorro-antd/list';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { ArticleComponent } from '../article/article.component';
+import { SocialsModule } from '../components/socials/socials.module';
+
 
 @NgModule({
   declarations: [BlogComponent, ArticleComponent],
@@ -19,6 +21,6 @@ import { ArticleComponent } from '../article/article.component';
     NzSelectModule,
     NzTagModule,
     NzListModule,
-    NzIconModule],
+    NzIconModule,SocialsModule],
 })
 export class BlogModule {}

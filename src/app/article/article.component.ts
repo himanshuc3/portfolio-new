@@ -1,9 +1,8 @@
-import { Component, OnInit,AfterViewChecked } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ScullyRoute, ScullyRoutesService } from '@scullyio/ng-lib';
 import {ActivatedRoute} from '@angular/router';
 import { Observable,combineLatest } from 'rxjs';
 import { map , pluck} from 'rxjs/operators';
-import {HighlightService} from '../components/syntaxHighlighting/highlight.service'
 
 
 
@@ -12,10 +11,9 @@ import {HighlightService} from '../components/syntaxHighlighting/highlight.servi
   templateUrl: './article.component.html',
   styleUrls: ['./article.component.scss']
 })
-export class ArticleComponent implements OnInit,AfterViewChecked {
+export class ArticleComponent implements OnInit {
 
   $blogPostMetadata: Observable<ScullyRoute | undefined> 
-  private highlightService: HighlightService
 
  constructor(
     private activatedRoute: ActivatedRoute,
@@ -23,9 +21,6 @@ export class ArticleComponent implements OnInit,AfterViewChecked {
   ) {}
 
 
-  ngAfterViewChecked() {
-    this.highlightService.highlightAll();
-  }
   ngOnInit(): void {
    this.$blogPostMetadata = this.scully.available$.pipe(
      map(routeList => {

@@ -21,6 +21,7 @@ import { NzListModule } from 'ng-zorro-antd/list';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SocialsModule } from './components/socials/socials.module';
 
 registerLocaleData(en);
 
@@ -45,9 +46,10 @@ registerLocaleData(en);
     NzListModule,
     NzIconModule,
     ScullyLibModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    SocialsModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
