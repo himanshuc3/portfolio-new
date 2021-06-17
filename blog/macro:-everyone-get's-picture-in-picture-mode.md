@@ -1,5 +1,5 @@
 ---
-title: 'Macro: Everyone get''s Picture-in-Picture mode'
+title: 'Microbe: Everyone get''s Picture-in-Picture mode'
 description: 'Brief on PIP API and it''s current draft status'
 date: 'Mar 30'
 published: true
@@ -8,20 +8,17 @@ icon: 'assets/blog/pip-icon.svg'
 tags: ['js', 'macro']
 ---
 
-Hola amigos, let's start with this coffee break post with all my spanish exhausted in my first couple of words. 
+>  Define Microbe : microscopic, single-celled organisms like bacteria and fungi. That's the most lucid definition and also the first google search result (I care about SEO).
 
-So we are starting with a micro post and noobs who do not know it's definition:
-
->  Micro Post : It's a TIL topic. We concentrate on an atomic topic and gist is 'If you don't know, now you know'.
+Well keeping the context, a microbe blog topic is considered as a TIL topic. Purpose of these type of articles is to be able to read them in even the most busiest of work days. So let's get rolling .
 
 
-With that out of the way, let's get into the crux of the post. We are going to introduce Picture in Picture API in browsers and how to overlay any video websites like Netflix, Amazon... to go into PIMP *cough cough* PIP mode.
+With that out of the way, let's shallow dive this topic. We are going to introduce Picture in Picture API in browsers and how to overlay any OTT websites like Netflix, Amazon... or any website that contains a video for that matter, to go into PIM.. ah, PIP mode.
 
-## Picture in Picture mode
+## Picture in Picture API
 
-The [Picture-in-Picture](https://developer.mozilla.org/en-US/docs/Web/API/Picture-in-Picture_API) API allow websites to create a floating video window always on top of other windows so that users may continue consuming media while they interact with other content sites, or applications on their device.
+Before we dive into the API, let's see a demo of what we're dealing with here:
 
-Keyword from above is `video` i.e. [HTMLVideoElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement) is the only HTML element on which this interface method is exposed aka video tag.
 
 <figure>
 
@@ -30,7 +27,13 @@ Keyword from above is `video` i.e. [HTMLVideoElement](https://developer.mozilla.
 
 </figure>
 
-Now that you see it in action, let's see how we can add this to literally any website (amazon, netflix...) and create a PIP. 
+The [Picture-in-Picture](https://developer.mozilla.org/en-US/docs/Web/API/Picture-in-Picture_API) API allow websites to create a floating window out of a video, always on top of other windows so that users may continue consuming media while they interact with other content sites, or applications on their device.
+
+Keyword from above is `<video />` i.e. [HTMLVideoElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement) is the only HTML element on which this interface method is exposed.
+
+
+Here's a small snippet of code that can copied to console in dev tools & let's you use the PIP api to the first video on a html page:
+
 <p class="codeblock-title">Selects the first video in the page and shows in PIP</p>
 
 ```js
@@ -39,7 +42,7 @@ selectedVideo.disablePictureInPicture = false // enable pip mode
 await selectedVideo.requestPictureInPicture() // enjoy PIP
 ```
 
-That is literally all we need to do, and here's a demo with hotstar (streaming service popular in India):
+Here's a demo of using the above snippet on hotstar (streaming service popular in India):
 
 <figure>
 
