@@ -1,7 +1,7 @@
 ---
 title: 'Microbe: Everyone get''s Picture-in-Picture mode'
 description: 'Brief on PIP API and it''s current draft status'
-date: 'Mar 30'
+date: 'Jun 18'
 published: true
 poster: 'assets/blog/pip.jpg'
 icon: 'assets/blog/pip-icon.svg'
