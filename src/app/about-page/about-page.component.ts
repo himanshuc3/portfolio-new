@@ -11,7 +11,7 @@ export class AboutPageComponent implements OnInit {
 
   aboutMeList: any = [
     {
-      title: 'I love experimenting with different backend languages \n (currently on go)',
+      title: 'jack of some trades - currently stuck w/ kalimba, linguistic history',
       path: 'assets/experiment.svg'
     },
     {
@@ -19,15 +19,15 @@ export class AboutPageComponent implements OnInit {
       path: 'assets/terminal.svg'
     },
     {
-      title: 'Chess enthusiast, blunder master, hate being flagged',
+      title: 'Chess enthusiast, blunder master, always in time crunch',
       path: 'assets/flag.svg'
     },
     {
-      title: 'Lover of sunshine, not to be mistaken with climate change',
+      title: "Advocating sunshine since '97 😸 ",
       path: 'assets/sun.svg'
     },
     {
-      title: 'Hit me up on fortnite, cod, rocket league',
+      title: 'casual gamer - hit me up on fortnite, cod, rocket league ',
       path: 'assets/gamepad.svg'
     }
     

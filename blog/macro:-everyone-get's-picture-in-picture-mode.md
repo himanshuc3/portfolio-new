@@ -8,12 +8,12 @@ icon: 'assets/blog/pip-icon.svg'
 tags: ['js', 'macro']
 ---
 
+This is first of the many posts (hopefully) I will create in the "Microbe" series. It also happens to be my very first blog post here and I hope you learn something other than me justifying my terrible marks in english in this piece of writing. On that note let's dive right in.    
+
 >  *Microbe* :: microscopic, single-celled organisms like bacteria and fungi. That's the most lucid definition and also the first google search result (#SEOmatters).
 
-Well keeping the context, a **microbe blog topic is considered as a TIL topic**. Purpose of these type of articles is to be able to read them in even the most busiest of work days in a couple of minutes. So let's get rolling .
-
-
-
+Welcome to  
+ Well keeping the context, a **microbe blog topic is considered as a TIL topic**. Purpose of these type of articles is to be able to read them in even the most busiest of work days in a couple of minutes. So let's get rolling .
 
 ## Picture in Picture API
 
